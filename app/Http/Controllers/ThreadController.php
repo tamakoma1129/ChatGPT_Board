@@ -15,7 +15,7 @@ class ThreadController extends Controller
     public function index()
     {
         $threads=Thread::all();
-        return view('thread.index',["threads"=>$threads);
+        return view('thread.index',["threads"=>$threads]);
     }
 
     /**
