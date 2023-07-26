@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('thread.layout')
 
 @section('content')
     <h1>スレッド一覧</h1>
