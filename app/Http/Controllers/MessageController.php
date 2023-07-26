@@ -35,7 +35,12 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $message = new Message;
+
+        $message->thread_id = $request->thread_id;
+        $message->message = $request->message;
+        $message->role = $request->role;
+        $message->save();
     }
 
     /**
