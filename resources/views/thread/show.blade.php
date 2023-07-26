@@ -15,7 +15,7 @@
         <input type="hidden" name="thread_id" value="{{ $thread->id }}">
         <div>
             <label for="role">役割:</label>
-            <input type="radio" id="role" name="role" value="User">User
+            <input type="radio" id="role" name="role" value="User" checked>User
             <input type="radio" id="role" name="role" value="ChatGPT">ChatGPT
         </div>
         <div>
