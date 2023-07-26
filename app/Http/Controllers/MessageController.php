@@ -41,6 +41,8 @@ class MessageController extends Controller
         $message->message = $request->message;
         $message->role = $request->role;
         $message->save();
+
+        return redirect()->route('threads.detail',["id"=>$request->thread_id]);
     }
 
     /**
