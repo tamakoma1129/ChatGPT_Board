@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ThreadController;
+use App\Http\Controllers\MessageController;
 
 Route::get("/threads", [ThreadController::class, "index"])->name("threads.list");
 Route::get("/thread/create", [ThreadController::class, "create"])->name("threads.create");
