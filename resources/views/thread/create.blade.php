@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>新しい記事の作成</h1>
-    <a href="{{ route('threads.list') }}"></a>
+    <a href={{ route('threads.list') }} class='btn btn-outline-primary'>記事一覧へ戻る</a>
     <form method="POST" action="{{ route('threads.store') }}">
         @csrf
         <div>
