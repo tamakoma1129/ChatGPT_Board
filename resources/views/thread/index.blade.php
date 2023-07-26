@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>スレッド一覧</h1>
-
+    <a href={{ route('threads.create') }} class='btn btn-outline-primary'>新規スレッドを作成</a>
     <table class='table table-striped table-hover'>
         <tr>
             <th>タイトル</th>
