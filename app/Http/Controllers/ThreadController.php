@@ -45,9 +45,11 @@ class ThreadController extends Controller
      * @param  \App\Models\Thread  $thread
      * @return \Illuminate\Http\Response
      */
-    public function show(Thread $thread)
+    public function show($id)
     {
-        //
+        $thread = Thread::find($id);
+        $messages = $thread->messages;
+        return view('thread.show',["thread"=>$thread,"messages"=>$messages]);
     }
 
     /**
