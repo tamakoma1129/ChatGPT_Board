@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>新しい記事の作成</h1>
-    <form method="POST" action="">
+    <form method="POST" action="{{ route('threads.store') }}">
         @csrf
         <div>
             <label for="title">タイトル:</label>
