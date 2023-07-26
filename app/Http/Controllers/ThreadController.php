@@ -36,7 +36,13 @@ class ThreadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $thread = new Thread;
+
+        $thread->title = $request->title;
+        $thread->overview = $request->overview;
+        $thread->save();
+
+        return redirect()->route('threads.list');
     }
 
     /**
