@@ -12,7 +12,7 @@
         @foreach ($threads as $thread)
             <tr>
                 <td>
-                    <a href="{{ route('thread.detail', ['id' => $thread->id]) }}">
+                    <a href={{ route('threads.detail', ['id' => $thread->id]) }}>
                         {{ $thread->title }}
                     </a>
                 </td>
