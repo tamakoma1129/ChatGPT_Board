@@ -8,6 +8,8 @@ Route::get("/thread/create", [ThreadController::class, "create"])->name("threads
 Route::post("/thread/store", [ThreadController::class, "store"])->name("threads.store");
 Route::get("/thread/{id}",[ThreadController::class, "show"])->name("threads.detail");
 
+Route::post("/message/store", [MessageController::class, "store"])->name("messages.store")
+
 Route::get('/', function () {
     return redirect("/threads");
 });
